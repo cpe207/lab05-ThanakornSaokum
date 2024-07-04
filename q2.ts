@@ -1,9 +1,15 @@
+// ธนกร เสาคำ 660610761
 // define interface for Student object
 /* Your code here */
+interface Students {
+  name: string;
+  score: number;
+}
 
 // assign interface/type to the function definition properly
-function findTopNames(students) {
+function findTopNames(students: Students[]) {
   /* Your code here */
+  return students.filter((students) => students.score > 8).map((students) => students.name);
 }
 
 // assign interface/type to the student1 object properly
